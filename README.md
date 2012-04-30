@@ -14,12 +14,14 @@ system update
 
 rvm
 -------------
-    curl -L get.rvm.io | sudo bash -s stable
-    usermod -a -G rvm ubuntu
-    exit
-    rvm install 1.9.3
-    rvm use 1.9.3 --default
-    exit
+```bash
+curl -L get.rvm.io | sudo bash -s stable
+usermod -a -G rvm ubuntu
+exit
+rvm install 1.9.3
+rvm use 1.9.3 --default
+exit
+```
 
 rubygems/rails/passenger
 -------------
