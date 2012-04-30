@@ -3,7 +3,8 @@ rails3-on-ec2
 
 Instructions for create a ubuntu ec2 instance for rails
 
-# ami for Ubuntu LTS 12.04 
+ami for Ubuntu LTS 12.04
+-------------
 ami-e1e8d395
 
 # system update
