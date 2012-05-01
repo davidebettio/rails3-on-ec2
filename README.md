@@ -83,7 +83,8 @@ nodejs
     sudo apt-get update
     sudo apt-get install nodejs npm
 
-change php-fpm user for Wordpress automatic update
+Wordpress automatic update
 -------------
+change php-fpm user in /etc/php/fpm/pool.d/www.conf
     user = ubuntu
     group = ubuntu
