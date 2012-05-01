@@ -73,8 +73,8 @@ database and users
 -------------
     mysql -u root -p
     create database votoitalia
-    CREATE USER 'votoitalia'@'localhost' IDENTIFIED BY '123456';
-    GRANT ALL PRIVILEGES ON votoitalia.* TO 'votoitalia'@'localhost' WITH GRANT OPTION;
+    CREATE USER 'user1'@'localhost' IDENTIFIED BY '123456';
+    GRANT ALL PRIVILEGES ON db1.* TO 'user1'@'localhost' WITH GRANT OPTION;
 
 nodejs
 -------------
@@ -82,3 +82,8 @@ nodejs
     sudo add-apt-repository ppa:chris-lea/node.js
     sudo apt-get update
     sudo apt-get install nodejs npm
+
+change php-fpm user for Wordpress automatic update
+-------------
+    user = ubuntu
+    group = ubuntu
