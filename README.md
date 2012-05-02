@@ -12,6 +12,10 @@ system update
     sudo apt-get update
     sudo apt-get upgrade
 
+configure timezone
+-------------
+    dpkg-reconfigure tzdata
+
 rvm
 -------------
 ```bash
