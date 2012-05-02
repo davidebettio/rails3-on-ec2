@@ -79,7 +79,7 @@ to comment
 database and users
 -------------
     mysql -u root -p
-    create database votoitalia
+    create database db1
     CREATE USER 'user1'@'localhost' IDENTIFIED BY '123456';
     GRANT ALL PRIVILEGES ON db1.* TO 'user1'@'localhost' WITH GRANT OPTION;
 
@@ -95,3 +95,7 @@ Wordpress automatic update
 change php-fpm user in /etc/php/fpm/pool.d/www.conf
     user = ubuntu
     group = ubuntu
+
+crontab for Rails tasks
+-------------
+    /bin/bash -l -c "cd /home/ubuntu/www/site1 && rake cron"
