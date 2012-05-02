@@ -59,7 +59,7 @@ mysql
 -------------
     sudo apt-get install mysql-server libmysqlclient-dev
 
-mysql utf8
+mysql configuration
 -------------
 add to [client]
     default-character-set=utf8
@@ -68,6 +68,9 @@ add to [mysqld]
     character-set-server=utf8
     collation-server=utf8_general_ci
     init-connect='SET NAMES utf8'
+    
+to comment
+    bind-address           = 127.0.0.1
 
 database and users
 -------------
