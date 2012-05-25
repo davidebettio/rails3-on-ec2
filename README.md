@@ -18,14 +18,12 @@ configure timezone
 
 rvm
 -------------
-```bash
-curl -L get.rvm.io | sudo bash -s stable
-usermod -a -G rvm ubuntu
-exit
-rvm install 1.9.3
-rvm use 1.9.3 --default
-exit
-```
+    curl -L get.rvm.io | sudo bash -s stable
+    usermod -a -G rvm ubuntu
+    exit
+    rvm install 1.9.3
+    rvm use 1.9.3 --default
+    exit
 
 rubygems/rails/passenger
 -------------
@@ -40,17 +38,17 @@ nginx
 
 nginx configuration
 -------------
-/opt/nginx/conf/nginx.conf
-server {
-      listen 80;
-      server_name www.yourhost.com;
-      root /somewhere/public;   # <--- be sure to point to 'public'!
-      passenger_enabled on;
-   }
+    /opt/nginx/conf/nginx.conf
+    server {
+        listen 80;
+        server_name www.yourhost.com;
+        root /somewhere/public;   # <--- be sure to point to 'public'!
+        passenger_enabled on;
+    }
 
 guide to nginx
 -------------
-/usr/local/rvm/gems/ruby-1.9.3-p194/gems/passenger-3.0.12/doc/Users guide Nginx.html
+    located in /usr/local/rvm/gems/ruby-1.9.3-p194/gems/passenger-3.0.12/doc/Users guide Nginx.html
 
 nginx init script
 -------------
@@ -65,16 +63,16 @@ mysql
 
 mysql configuration
 -------------
-add to [client]
-    default-character-set=utf8
+    add to [client]
+        default-character-set=utf8
 
-add to [mysqld]
-    character-set-server=utf8
-    collation-server=utf8_general_ci
-    init-connect='SET NAMES utf8'
+    add to [mysqld]
+        character-set-server=utf8
+        collation-server=utf8_general_ci
+        init-connect='SET NAMES utf8'
     
-to comment
-    bind-address           = 127.0.0.1
+    to comment
+        bind-address           = 127.0.0.1
 
 database and users
 -------------
@@ -92,9 +90,9 @@ nodejs
 
 Wordpress automatic update
 -------------
-change php-fpm user in /etc/php/fpm/pool.d/www.conf
-    user = ubuntu
-    group = ubuntu
+    change php-fpm user in /etc/php/fpm/pool.d/www.conf
+        user = ubuntu
+        group = ubuntu
 
 crontab for Rails tasks
 -------------
