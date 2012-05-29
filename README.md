@@ -93,6 +93,9 @@ Wordpress automatic update
     change php-fpm user in /etc/php/fpm/pool.d/www.conf
         user = ubuntu
         group = ubuntu
+        
+    change listen to socket
+        listen = /var/run/php-fpm.sock
 
 crontab for Rails tasks
 -------------
